@@ -42,9 +42,9 @@ export default function Numbers() {
             <button className="Bracket1" onClick={() => setInput(input + "(")}>(</button>
             <button className="Bracket2" onClick={() => setInput(input + ")")}>)</button>
             <button className="power" onClick={() => setInput(Math.pow(input))}>^</button>
-            <button className="factorial" onClick={() => setInput(Math.factorial(input))}>!</button>
-            <button className='hyp' onClick={() => setInput(Math.hypot(input))}>hyp</button>
-            <button className='square' onClick={() => setInput(input * input)}>x^2</button>
+            <button className="factorial" onClick={() => setInput(Math.factorial(input + "!"))}>!</button>
+            <button className='hyp' onClick={() => setInput(Math.hypot(input + "hyp"))}>hyp</button>
+            <button className='square' onClick={() => setInput(input * input + "^2")}>x^2</button>
             <button className='cube' onClick={() => setInput(input * input * input)}>x^3</button>
             <button className='reci' onClick={() => setInput(Math.reciprocal(input))}>1/x</button>
             
